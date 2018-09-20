@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "outDir": "build",
+        "sourceMap": true,
+        "target": "es2016"
+    },
+    "include": [
+        "lib/**/*.ts",
+    ]
+}

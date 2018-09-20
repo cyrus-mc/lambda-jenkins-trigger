@@ -1,0 +1,20 @@
+#!/usr/bin/env groovy
+
+@Library('shared-library@master') _
+
+/*
+* label format: ${product}-${env}${stack_number}-${role}
+* label       : to describe stack resource.
+* product     : for cost centers. If general, please notify DevOps.
+* role        : to create unique resource name(s) and identify resource use.
+*/
+product      = "jenkins"
+role         = "trigger"
+stack_number = "1"
+/*
+* Please coordinate the above values with the DevOps team.
+*/
+
+lambda {
+  function_name = "jenkins-trigger"
+}
